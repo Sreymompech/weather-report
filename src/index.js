@@ -1,3 +1,6 @@
+import 'regenerator-runtime/runtime';
+import axios from 'axios';
+
 // Wave 2
 let state = {
   temp: 75,
