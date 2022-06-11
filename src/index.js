@@ -121,7 +121,7 @@ const getRealtimeTemp = () => {
   const cityName = document.getElementById('city-name').value;
   console.log(cityName);
   axios
-    .get('http://127.0.0.1:5000/location', {
+    .get('https://git.heroku.com/evening-badlands-63668/location', {
       params: {
         q: cityName,
       },
@@ -132,7 +132,7 @@ const getRealtimeTemp = () => {
       const latitudeCity = searchLocation.lat;
       const longitudeCity = searchLocation.lon;
       axios
-        .get('http://127.0.0.1:5000/weather', {
+        .get('https://git.heroku.com/evening-badlands-63668/weather', {
           params: {
             lat: latitudeCity,
             lon: longitudeCity,
